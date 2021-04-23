@@ -1,0 +1,57 @@
+
+package loan;
+
+
+import java.util.Scanner;
+
+public class Loan {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)  {
+    
+        
+        
+Object[] objects = {new Tiger(), new Chicken(), new Apple()};
+for (int i = 0; i < objects.length; i++) {
+  if (objects[i] instanceof Edible)
+  System.out.println(((Edible)objects[i]).howToEat());
+
+  if (objects[i] instanceof Animal) {
+ System.out.println(((Animal)objects[i]).sound());
+ }
+
+
+
+abstract class Animal {
+public abstract String sound();
+
+}
+class tiger extends Animal{
+
+            @Override
+            public String sound() {
+              return"Tiger: RROOAARR";
+            }
+Class chicken extends Animal implement Edible {
+ @Override
+            public String sound() {
+              return"Chicken: cock-a-doodle-doo";
+              
+            }
+@Override
+            public String HowTeat() {
+              return"Chicken: Fry it";
+              
+            }
+
+
+
+}
+
+
+        
+        
+	}
+}
